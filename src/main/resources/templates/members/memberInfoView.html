@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>회원상세페이지</title>
+</head>
+<body>
+<h1>회원 상세 페이지</h1>
+
+<form th:action="@{/member/modify/{id}(id=${member.id})}" method="post">
+    <div class="form-group">
+        <label id="name">이름</label>
+        <input type="text" name="name" th:value="${member.name}">
+        <label for="age">나이</label>
+        <input type="text" id="age" name="age" th:value="${member.age}">
+        <label for="phoneNumber">전화번호</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" th:value="${member.phoneNumber}">
+        <label for="regDate">등록일</label>
+        <input type="date" id="regDate" name="regDate" th:value="${member.regDate}">
+        <label for="endDate">종료일</label>
+        <input type="date" id="endDate" name="endDate" th:value="${member.endDate}">
+    </div>
+    <button type="submit">수정</button>
+</form>
+
+<a th:href="@{/member/delete(id=${member.id})}"><button>삭제</button></a>
+
+</body>
+</html>
