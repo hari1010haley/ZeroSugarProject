@@ -3,27 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <title>회원상세페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button[type="submit"],
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover,
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 <h1>회원 상세 페이지</h1>
 
 <form th:action="@{/member/modify/{id}(id=${member.id})}" method="post">
     <div class="form-group">
-        <label id="name">이름</label>
+        <label for="name">이름</label>
         <input type="text" name="name" th:value="${member.name}">
+    </div>
+    <div class="form-group">
         <label for="age">나이</label>
         <input type="text" id="age" name="age" th:value="${member.age}">
+    </div>
+    <div class="form-group">
         <label for="phoneNumber">전화번호</label>
         <input type="text" id="phoneNumber" name="phoneNumber" th:value="${member.phoneNumber}">
+    </div>
+    <div class="form-group">
         <label for="regDate">등록일</label>
         <input type="date" id="regDate" name="regDate" th:value="${member.regDate}">
+    </div>
+    <div class="form-group">
         <label for="endDate">종료일</label>
         <input type="date" id="endDate" name="endDate" th:value="${member.endDate}">
     </div>
     <button type="submit">수정</button>
 </form>
 
-<a th:href="@{/member/delete(id=${member.id})}"><button>삭제</button></a>
+<a th:href="@{/member/delete(id=${member.id})}">
+    <button>삭제</button>
+</a>
 
 </body>
 </html>
