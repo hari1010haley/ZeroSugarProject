@@ -84,7 +84,7 @@ References
 <br>  
 <h2>References</h2>
 참조사이트: None.
-개선을 위한 사이트: www.studiomate.co.kr 
+개선을 위한 사이트: <a href="https://studiomate.kr/">https://studiomate.kr/</a> 
 
 <br>
 🔗 <h3>배포 링크</h3> : www.healingcare.co.kr
