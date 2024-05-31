@@ -91,6 +91,8 @@ References
 
 🗓️ <h3>2024.05-.01 - 2024.05.31</h3>
 📑 <h3>PPT</h3>
+[MemberManagingSystem.pdf](https://github.com/user-attachments/files/15512561/MemberManagingSystem.pdf)
+
 
 <br>  
 🖥️ <h3>프로젝트 시연영상</h3>
