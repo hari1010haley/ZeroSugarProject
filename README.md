@@ -39,7 +39,8 @@ References
 
 <br><br>   
 <h2>Skills</h2>
-![리액트+스프링부트](https://github.com/hari1010haley/ZeroSugarProject/assets/153698072/ab12965e-52f3-4223-9da1-da9d5495c70c)
+<img src="https://github.com/hari1010haley/ZeroSugarProject/assets/153698072/7c8ed8fb-f846-47af-8ab7-e42796ee0394" alt="리액트+스프링부트">
+
   Spring-Boot  Java  JavaScript
   Vite  Node.js  React
   H2  Docker 
