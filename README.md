@@ -72,9 +72,9 @@ References
 
 <br><br>   
 <h2>프로젝트 및 이슈관리</h2>
- 1. remDays type 설정과 데이터 처리여부 결정
- 2. expireMembersBetweenDates 로직 처리
- 3. React build 후 SpringBoot와 통합연결
+ 1. remDays type 설정과 데이터 처리여부 결정<br>
+ 2. expireMembersBetweenDates 로직 처리<br>
+ 3. React build 후 SpringBoot와 통합연결<br>
  4. 배포
 
 <br><br>   
